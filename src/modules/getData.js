@@ -1,5 +1,5 @@
-const getData = () => {
-  return fetch('http://localhost:3000/goods')
+const getData = (str) => {
+  return fetch(`http://localhost:3000/goods${str ? str : ''}`)
     .then(response => response.json());
 };
 
