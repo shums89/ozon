@@ -26,28 +26,6 @@ const filter = () => {
     getData(str).then(data => renderGoods(data));
   });
 
-  // minInput.addEventListener('input', () => {
-  //   const value = priceFilter();
-
-  //   getData(`${value}`).then(data => renderGoods(data));
-  // });
-
-  // maxInput.addEventListener('input', () => {
-  //   const value = priceFilter();
-
-  //   getData(`${value}`).then(data => renderGoods(data));
-  // });
-
-  // checkboxInput.addEventListener('change', () => {
-  //   if (checkboxInput.checked) {
-  //     checkboxSpan.classList.add('checked');
-  //   } else {
-  //     checkboxSpan.classList.remove('checked');
-  //   }
-
-  //   getData(`?sale=${checkboxInput.checked}`).then(data => renderGoods(data));
-  // });
-
   const priceFilter = () => {
     const min = minInput.value;
     const max = maxInput.value;
